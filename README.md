@@ -12,3 +12,6 @@ Recursive traversing:
 Tree structure is Breath First. You need to go all the way down to leaf node.
 
 Tree traversing is using stack
+
+##Test
+`go test ./test`
