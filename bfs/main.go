@@ -12,7 +12,7 @@ func shift(list []Node) (*Node, []Node) {
 	return &list[0], list[1:] //start from index 1 : until the end of array
 }
 
-func bfs(head Node, needle int) bool {
+func BSF(head Node, needle int) bool {
 	queue := []Node{head}
 
 	for len(queue) > 0 {
@@ -32,8 +32,4 @@ func bfs(head Node, needle int) bool {
 	}
 
 	return false
-}
-
-func main() {
-
 }

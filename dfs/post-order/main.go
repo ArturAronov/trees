@@ -9,8 +9,8 @@ func walk(current *Node, path []int) []int {
 		return path
 	}
 
-	walk(current.Left, path)
-	walk(current.Right, path)
+	path = walk(current.Left, path)
+	path = walk(current.Right, path)
 	path = append(path, current.Value)
 
 	return path
